@@ -145,6 +145,7 @@ class _UserEditProfileDetailsSectionState
                 CustomTextButton(
                   title: AppLocalizations.of(context).logOut,
                   icon: AppAssets.logout,
+
                   style: AppTextStyles.logout,
                   side: const BorderSide(color: AppColors.hot, width: 3),
                 ),

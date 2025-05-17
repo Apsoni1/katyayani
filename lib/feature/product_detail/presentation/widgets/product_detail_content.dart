@@ -30,7 +30,7 @@ class ProductDetailContent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView(
-      padding: const EdgeInsets.symmetric(horizontal: 14.0),
+      padding: const EdgeInsets.only(left: 14,right: 14,bottom: 14),
       children: <Widget>[
         ProductImageSlider(
           images: product.image,

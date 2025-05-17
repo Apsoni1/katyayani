@@ -5,8 +5,8 @@ class AppAssets {
   static const String filter = 'assets/icons/filter_ic.png';
   static const String search = 'assets/icons/search_ic.png';
   static const String profile = 'assets/images/profile.png';
-  static const String burger1 = 'assets/images/burger1.png';
-  static const String burger2 = 'assets/images/burger2.png';
+  static const String burger1 = 'assets/images/profile.png';
+  static const String burger2 = 'assets/images/profile.png';
   static const String arrowLeft = 'assets/icons/arrow_left.png';
   static const String success = 'assets/images/success.png';
   static const String right = 'assets/images/right.png';
@@ -20,6 +20,6 @@ class AppAssets {
   static const String lock = 'assets/icons/lock.png';
   static const String logout = 'assets/icons/signout.png';
   static const String borderProfile = 'assets/images/borderProfile.png';
-  static const String halfLeftBurger = 'assets/images/halfleftburger.png';
-  static const String halfRightBurger = 'assets/images/halfRightBurger.png';
+  static const String halfLeftBurger = 'assets/images/profile.png';
+  static const String halfRightBurger = 'assets/images/profile.png';
 }

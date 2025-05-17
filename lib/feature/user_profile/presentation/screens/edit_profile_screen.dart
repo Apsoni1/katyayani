@@ -24,13 +24,7 @@ class EditProfileScreen extends StatelessWidget {
             top: size.h(0.06),
             left: 0,
             right: 0,
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: <Widget>[
-                Image.asset(AppAssets.halfLeftBurger),
-                Image.asset(AppAssets.halfRightBurger),
-              ],
-            ),
+            child: Image.asset(AppAssets.profile),
           ),
           Container(
             height: double.infinity,
@@ -61,7 +55,7 @@ class EditProfileScreen extends StatelessWidget {
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(20),
                 child: Image.asset(
-                  AppAssets.borderProfile,
+                  AppAssets.profile,
                 ),
               ),
             ),

@@ -17,7 +17,8 @@ class VariantSelector extends StatelessWidget {
       children: [
         Text(
           "Select Variant",
-          style: AppTextStyles.description.copyWith(fontWeight: FontWeight.bold),
+          style:
+              AppTextStyles.description.copyWith(fontWeight: FontWeight.bold),
         ),
         const SizedBox(height: 10),
         Wrap(
@@ -25,11 +26,18 @@ class VariantSelector extends StatelessWidget {
           children: AppsConstants.variantsToShow.map((variant) {
             final isSelected = variant == selectedVariant;
             return ChoiceChip(
-              label: Text(variant),
+              label: Text(
+                variant,
+                style: AppTextStyles.price.copyWith(
+                  color: isSelected ? AppColors.white : AppColors.black,
+                ),
+              ),
               selected: isSelected,
               onSelected: (_) {
                 if (!isSelected) {
-                  context.read<ProductItemDetailBloc>().add(VariantSelected(variant));
+                  context
+                      .read<ProductItemDetailBloc>()
+                      .add(VariantSelected(variant));
                 }
               },
               selectedColor: AppColors.buttonBg,
@@ -40,5 +48,3 @@ class VariantSelector extends StatelessWidget {
     );
   }
 }
-
-
